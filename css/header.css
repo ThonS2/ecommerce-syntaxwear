@@ -10,11 +10,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 1.7rem;
+    padding: 0.75rem 1.2rem;
 }
 
 .logo img{
-    height: 40px;
+    height: 48px;
+    width: 150px;
 }
 
 .nav-center ul{
