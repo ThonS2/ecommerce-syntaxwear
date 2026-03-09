@@ -1,0 +1,75 @@
+.card{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+}
+
+.destaque{
+    grid-area: destaque;
+    background-image: url(../img/images/mini-card-image.jpg);
+}
+
+.tenis-roxo{
+    grid-area: tenis-roxo;
+    background-image: url(../img/images/roxo-verde-grid.jpg);
+}
+
+.modelo{
+    grid-area: modelo;
+    background-image: url(../img/images/modelo-feminino-grid.jpg);   
+}
+
+.tenis-futurista{
+    grid-area: tenis-futurista;
+    background-image: url(../img/images/futurista-grid.jpg);
+}
+
+.tenis-moderno{
+    grid-area: tenis-moderno;
+    background-image: url(../img/images/moderno-grid.jpg);
+}
+
+.tenis-azul{
+    grid-area: tenis-azul;
+    background-image: url(../img/images/preto-azul-grid.jpg);
+}
+
+.grid-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas: 
+    "destaque destaque tenis-roxo tenis-roxo"
+    "destaque destaque modelo tenis-futurista"
+    "tenis-azul tenis-azul modelo tenis-moderno";
+    gap: 30px;
+}
+
+.destaque-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card-title{
+    color: #ededed;
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-subtitle{
+    color: #ededed;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-group{
+    display: flex;
+    gap: 10px;
+}
