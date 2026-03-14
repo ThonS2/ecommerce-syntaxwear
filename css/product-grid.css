@@ -73,3 +73,30 @@
     display: flex;
     gap: 10px;
 }
+
+@media (max-width:768px){
+  .grid-section{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+    "destaque destaque"
+    "tenis-azul tenis-azul"
+    "modelo tenis-futurista"
+    "modelo tenis-moderno"
+    "tenis-roxo tenis-roxo";
+    max-width: 100%;
+    gap: 0.25rem;
+  }  
+
+  .destaque{
+    min-height: 500px;
+  }
+
+  .modelo{
+    min-height: 370px;
+  }
+
+  .tenis-azul, .tenis-roxo{
+    min-height: 190px;
+  }
+}
